@@ -37,7 +37,191 @@
 
     // Tentukan URL tujuan berdasarkan parameter 'source'
     if (source === 'naya') {
+      newUrl = '<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+<!-- Facebook Pixel Code -->
+<script>function getURLParameter(e){return decodeURI((RegExp(e+"=(.+?)(&|$)").exec(location.search)||[,null])[1]||"")}var pixel=getURLParameter("pixel");!function(e,t,n,a,c,r,s){e.fbq||(c=e.fbq=function(){c.callMethod?c.callMethod.apply(c,arguments):c.queue.push(arguments)},e._fbq||(e._fbq=c),c.push=c,c.loaded=!0,c.version="2.0",c.queue=[],(r=t.createElement(n)).async=!0,r.src="https://connect.facebook.net/en_US/fbevents.js",(s=t.getElementsByTagName(n)[0]).parentNode.insertBefore(r,s))}(window,document,"script"),fbq("init",pixel),fbq("track","InitiateCheckout"),function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://analytics.tiktok.com/i18n/pixel/sdk.js?sdkid="+pixel;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}();</script>
+		<noscript><img height='1' width='1' style='display:none'
+			src='https://www.facebook.com/tr?id=884700937212634&ev=InitiateCheckout&noscript=1' /></noscript>
+<!-- End Facebook Pixel Code -->
+  
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin-ext" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
+  <script src="js/js.cookie.min.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class="b-question">
+    <div class="title-question"> Hai più di 30 anni? </div>
+    <div class="text-justify">
+      <a id="ya" class="m-red" href="#"> SÌ </a>
+      <a id="tidak" class="m-red" href="#"> NO </a>
+    </div>
+  </div>
+<script>
+  // Ambil elemen tombol berdasarkan ID
+  var buttonYa = document.getElementById('ya');
+  var buttonTidak = document.getElementById('tidak');
+
+  // Fungsi untuk menangani klik tombol
+  function handleClick(event) {
+    event.preventDefault();
+    var allParameters = getAllParameters();
+    var source = allParameters['source'];
+    var newUrl;
+
+    // Tentukan URL tujuan berdasarkan parameter 'source'
+    if (source === 'naya') {
       newUrl = 'https://idealbody.club/cdmzl1k.php';
+    } else if (source === 'umar') {
+      newUrl = 'https://oemar.com';
+    } else {
+      newUrl = '<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+<!-- Facebook Pixel Code -->
+<script>function getURLParameter(e){return decodeURI((RegExp(e+"=(.+?)(&|$)").exec(location.search)||[,null])[1]||"")}var pixel=getURLParameter("pixel");!function(e,t,n,a,c,r,s){e.fbq||(c=e.fbq=function(){c.callMethod?c.callMethod.apply(c,arguments):c.queue.push(arguments)},e._fbq||(e._fbq=c),c.push=c,c.loaded=!0,c.version="2.0",c.queue=[],(r=t.createElement(n)).async=!0,r.src="https://connect.facebook.net/en_US/fbevents.js",(s=t.getElementsByTagName(n)[0]).parentNode.insertBefore(r,s))}(window,document,"script"),fbq("init",pixel),fbq("track","InitiateCheckout"),function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://analytics.tiktok.com/i18n/pixel/sdk.js?sdkid="+pixel;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}();</script>
+		<noscript><img height='1' width='1' style='display:none'
+			src='https://www.facebook.com/tr?id=884700937212634&ev=InitiateCheckout&noscript=1' /></noscript>
+<!-- End Facebook Pixel Code -->
+  
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin-ext" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
+  <script src="js/js.cookie.min.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class="b-question">
+    <div class="title-question"> Hai più di 30 anni? </div>
+    <div class="text-justify">
+      <a id="ya" class="m-red" href="#"> SÌ </a>
+      <a id="tidak" class="m-red" href="#"> NO </a>
+    </div>
+  </div>
+<script>
+  // Ambil elemen tombol berdasarkan ID
+  var buttonYa = document.getElementById('ya');
+  var buttonTidak = document.getElementById('tidak');
+
+  // Fungsi untuk menangani klik tombol
+  function handleClick(event) {
+    event.preventDefault();
+    var allParameters = getAllParameters();
+    var source = allParameters['source'];
+    var newUrl;
+
+    // Tentukan URL tujuan berdasarkan parameter 'source'
+    if (source === 'naya') {
+      newUrl = 'https://idealbody.club/cdmzl1k.php';
+    } else if (source === 'umar') {
+      newUrl = 'https://oemar.com';
+    } else {
+      newUrl = 'https://idealbody.club/cdmzl1k.php'; // URL default jika source tidak dikenal
+    }
+
+    // Pastikan URL memiliki tanda "?"
+    if (!newUrl.includes('?')) {
+      newUrl += '?';
+    }
+
+    // Tambahkan semua parameter ke URL baru (kecuali 'source')
+    for (var key in allParameters) {
+      if (key !== 'source') {
+        newUrl += encodeURIComponent(key) + '=' + encodeURIComponent(allParameters[key]) + '&';
+      }
+    }
+
+    // Hapus karakter '&' terakhir
+    newUrl = newUrl.slice(0, -1);
+
+    // Redirect ke URL baru
+    window.location.href = newUrl;
+  }
+
+  // Tambahkan event listener jika tombol ditemukan
+  if (buttonYa) {
+    buttonYa.addEventListener('click', handleClick);
+  } else {
+    console.warn('Tombol Ya tidak ditemukan di DOM.');
+  }
+
+  if (buttonTidak) {
+    buttonTidak.addEventListener('click', handleClick);
+  } else {
+    console.warn('Tombol Tidak tidak ditemukan di DOM.');
+  }
+
+  // Fungsi untuk mendapatkan semua parameter dari URL
+  function getAllParameters() {
+    var searchParams = new URLSearchParams(window.location.search);
+    var params = {};
+    searchParams.forEach(function (value, key) {
+      params[key] = value;
+    });
+    return params;
+  }
+</script>
+
+  
+</body>
+</html>
+'; // URL default jika source tidak dikenal
+    }
+
+    // Pastikan URL memiliki tanda "?"
+    if (!newUrl.includes('?')) {
+      newUrl += '?';
+    }
+
+    // Tambahkan semua parameter ke URL baru (kecuali 'source')
+    for (var key in allParameters) {
+      if (key !== 'source') {
+        newUrl += encodeURIComponent(key) + '=' + encodeURIComponent(allParameters[key]) + '&';
+      }
+    }
+
+    // Hapus karakter '&' terakhir
+    newUrl = newUrl.slice(0, -1);
+
+    // Redirect ke URL baru
+    window.location.href = newUrl;
+  }
+
+  // Tambahkan event listener jika tombol ditemukan
+  if (buttonYa) {
+    buttonYa.addEventListener('click', handleClick);
+  } else {
+    console.warn('Tombol Ya tidak ditemukan di DOM.');
+  }
+
+  if (buttonTidak) {
+    buttonTidak.addEventListener('click', handleClick);
+  } else {
+    console.warn('Tombol Tidak tidak ditemukan di DOM.');
+  }
+
+  // Fungsi untuk mendapatkan semua parameter dari URL
+  function getAllParameters() {
+    var searchParams = new URLSearchParams(window.location.search);
+    var params = {};
+    searchParams.forEach(function (value, key) {
+      params[key] = value;
+    });
+    return params;
+  }
+</script>
+
+  
+</body>
+</html>
+';
     } else if (source === 'umar') {
       newUrl = 'https://oemar.com';
     } else {
